@@ -1,4 +1,4 @@
-# Week 1 Project: Cybersecurity Lab Setup
+<img width="1366" height="643" alt="Screenshot_2026-10-27_17_30_19" src="https://github.com/user-attachments/assets/cf4f73b9-727a-4c27-925e-6479307f72a9" /><img width="1366" height="643" alt="Screenshot_2026-10-27_17_52_52" src="https://github.com/user-attachments/assets/dc2721c2-9154-46de-8c94-062a1349d454" /># Week 1 Project: Cybersecurity Lab Setup
 
 **Program:** Cybersecurity — Networkwalks  
 **Batch:** B084  
@@ -53,20 +53,24 @@ It can be used for activities such as:
 ### 5.1 Installed and configured VirtualBox
 
 I installed Oracle VirtualBox on Windows to create and manage virtual machines.
+<img width="1365" height="715" alt="Screenshot 2026-10-27 231406" src="https://github.com/user-attachments/assets/f4b8b93d-38ac-4f1a-b207-a9a69fdb27e9" />
 
 ### 5.2 Imported Kali Linux
 
 I imported a Kali Linux virtual machine into VirtualBox and checked its virtual hardware and network adapter settings.
+<img width="1365" height="724" alt="Screenshot 2026-10-31 092027" src="https://github.com/user-attachments/assets/1f503d15-f2e0-4b67-b617-9e08b8429159" />
 
 ### 5.3 Created a NAT Network
 
 I configured a VirtualBox NAT Network with the IPv4 prefix:
+<img width="1365" height="715" alt="Screenshot 2026-10-27 231406" src="https://github.com/user-attachments/assets/238e4ef1-a2a9-4f47-80f6-dc97408d7d91" />
 
 ```text
 10.0.0.0/24
 ```
 
 I attached the Kali VM's network adapter to this NAT Network. DHCP remained enabled in VirtualBox, while Kali was configured to use a static address. These settings can coexist, provided the static address does not conflict with another address in use.
+<img width="988" height="674" alt="Screenshot 2026-10-27 231631" src="https://github.com/user-attachments/assets/607a6983-691a-4711-9a78-efe1874397ad" />
 
 ### 5.4 Configured static IPv4 settings in Kali
 
@@ -79,6 +83,7 @@ In Kali's network connection editor, I selected **IPv4 → Manual** and entered:
 | Gateway | `10.0.0.1` |
 | DNS | `8.8.8.8` |
 
+![Alt text standard description](Screenshot_2026-10-27_17_52_52.png)
 ## 6. Challenges and Troubleshooting 🐞
 
 ### Challenge 1: Network settings were saved, but Kali had no IPv4 address
